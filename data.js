@@ -73,5 +73,10 @@ window.parentsDayData = {
       body: "묵묵히 우리 곁을 지켜주고, 필요한 순간마다 든든한 버팀목이 되어줘서 고마워요. 아빠가 보여준 책임감과 사랑을 오래 기억할게요."
     }
   },
-  finalPhoto: ""
+  messagePhotos: {
+    mom: [],
+    dad: []
+  },
+  finalPhoto: "",
+  musicFile: ""
 };

@@ -210,6 +210,12 @@ async function setStoredMusic(src) {
 }
 
 function getStaticPhotos(id) {
+  if (id.startsWith("message:")) {
+    const key = id.replace("message:", "");
+    const photos = appData.messagePhotos && appData.messagePhotos[key];
+    return Array.isArray(photos) ? photos : [];
+  }
+
   const item = timelineItems.find((entry) => entry.id === id);
   return item && Array.isArray(item.photos) ? item.photos : [];
 }
@@ -432,8 +438,9 @@ function setupSoundButton() {
   if (!soundButton || !backgroundMusic) return;
 
   getStoredMusic().then((src) => {
-    if (!src) return;
-    backgroundMusic.src = src;
+    const musicSrc = src || appData.musicFile || "";
+    if (!musicSrc) return;
+    backgroundMusic.src = musicSrc;
     soundButton.classList.add("has-music");
     soundButton.setAttribute("aria-label", "음악 재생");
   });

@@ -35,6 +35,21 @@
 finalPhoto: "assets/photos/closing/final.jpg"
 ```
 
+엄마/아빠 메시지에 기본 사진을 함께 배포하려면 `messagePhotos`에 경로를 적습니다.
+
+```js
+messagePhotos: {
+  mom: ["assets/photos/mom/photo-1.jpg"],
+  dad: ["assets/photos/dad/photo-1.jpg"]
+}
+```
+
+음악을 함께 배포하려면 `assets/music` 폴더에 음악 파일을 넣고 `musicFile`에 경로를 적습니다.
+
+```js
+musicFile: "assets/music/background.mp3"
+```
+
 브라우저에서 직접 누르는 `사진 추가`와 `사진 넣기`도 가능하지만, 그 방식은 현재 기기에만 저장됩니다.
 각 시간 카드 안의 `사진 여러 장 추가` 버튼은 한 번에 여러 장 선택할 수 있습니다.
 
