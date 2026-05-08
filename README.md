@@ -45,3 +45,15 @@ node server.mjs
 ```
 
 컴퓨터와 휴대폰이 같은 Wi-Fi에 연결되어 있으면 휴대폰에서 `http://컴퓨터IP:5173`으로 접속할 수 있습니다.
+
+## 외부에서 접속하게 배포하기
+
+이 저장소는 GitHub Pages로 배포할 수 있습니다. `master` 브랜치에 푸시하면 `.github/workflows/pages.yml`이 정적 파일만 모아서 Pages에 올립니다.
+
+배포 후 주소는 보통 아래 형태입니다.
+
+```text
+https://greentree3123.github.io/parents_day/
+```
+
+주의: 사이트 화면에서 직접 추가한 사진과 음악은 현재 기기 안에 저장됩니다. 외부에 있는 가족도 같은 사진과 음악을 보려면 파일을 `assets` 폴더에 넣고 `data.js`에 경로를 적어 함께 배포해야 합니다.
