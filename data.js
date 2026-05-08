@@ -78,5 +78,5 @@ window.parentsDayData = {
     dad: []
   },
   finalPhoto: "",
-  musicFile: ""
+  musicFile: "assets/music/[mp3] 어머님 은혜.mp3"
 };
