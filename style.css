@@ -61,11 +61,17 @@ label {
   right: max(20px, calc(50% - 258px));
 }
 
-.sound-button {
+.music-control {
   position: fixed;
   top: 18px;
   right: max(18px, calc(50% - 238px));
   z-index: 5;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.sound-button {
   width: 56px;
   height: 56px;
   border: 1px solid rgba(198, 168, 147, 0.35);
@@ -75,6 +81,35 @@ label {
   font-size: 22px;
   box-shadow: 0 8px 24px rgba(91, 63, 48, 0.12);
   backdrop-filter: blur(8px);
+}
+
+.sound-button.has-music {
+  background: rgba(255, 248, 241, 0.94);
+}
+
+.music-upload {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 70px;
+  min-height: 28px;
+  padding: 5px 9px;
+  border: 1px solid rgba(198, 168, 147, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 252, 248, 0.86);
+  color: #9b765f;
+  font-size: 12px;
+  box-shadow: 0 6px 16px rgba(91, 63, 48, 0.1);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+.music-upload input {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero {
@@ -496,6 +531,7 @@ h1 {
 .modal h3 {
   margin: 0;
   font-size: 30px;
+  white-space: pre-line;
 }
 
 .modal p {
@@ -530,9 +566,6 @@ h1 {
 }
 
 .delete-photo {
-  position: absolute;
-  top: 8px;
-  right: 8px;
   display: grid;
   place-items: center;
   width: 30px;
@@ -545,6 +578,34 @@ h1 {
   line-height: 1;
   box-shadow: 0 6px 16px rgba(60, 32, 26, 0.18);
   cursor: pointer;
+}
+
+.photo-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.move-photo {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 246, 239, 0.72);
+  border-radius: 999px;
+  background: rgba(255, 250, 245, 0.9);
+  color: #7e594d;
+  font-size: 22px;
+  line-height: 1;
+  box-shadow: 0 6px 16px rgba(60, 32, 26, 0.18);
+  cursor: pointer;
+}
+
+.move-photo:disabled {
+  opacity: 0.42;
+  cursor: default;
 }
 
 .static-photo-badge {

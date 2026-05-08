@@ -8,7 +8,14 @@
   </head>
   <body data-page="parents">
     <main class="phone-shell">
-      <button class="sound-button" type="button" aria-label="소리 켜기">♪</button>
+      <div class="music-control">
+        <button class="sound-button" type="button" aria-label="음악 재생">♪</button>
+        <label class="music-upload">
+          <input type="file" accept="audio/*" id="musicInput">
+          노래 넣기
+        </label>
+        <audio id="backgroundMusic" loop></audio>
+      </div>
 
       <section class="hero">
         <div class="flower-field" aria-hidden="true">
@@ -20,7 +27,7 @@
           <span class="leaf leaf-right"></span>
         </div>
         <p class="eyebrow">2026 어버이날</p>
-        <h1>사랑하는 엄마 아빠께</h1>
+        <h1>사랑하는<br>엄마아빠께</h1>
         <p class="lead">미라와 재원이의 시간들,<br>그 속에서 부모님께 전하는 말</p>
         <span class="divider"></span>
       </section>
@@ -54,7 +61,7 @@
         <p class="dots">•••</p>
         <p class="eyebrow">마치며</p>
         <p class="closing-copy">
-          부모님의 사랑으로 자란 제가,<br>
+          부모님의 사랑으로 자란 저희가,<br>
           이제는 받은 사랑을 부모님께 다시<br>
           돌려드리며 효도할게요.<br><br>
           감사하고 사랑합니다.

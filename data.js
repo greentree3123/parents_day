@@ -23,7 +23,7 @@ window.parentsDayData = {
     {
       id: "bbb",
       icon: "🏫",
-      title: "각자의 자리에서 빛나던 시간",
+      title: "각자의 자리에서\n빛나던 시간",
       subtitle: "미라는 대학생, 재원이는 고등학생",
       period: "2022 - 2023",
       color: "#ffe6d4",
