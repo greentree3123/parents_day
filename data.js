@@ -120,6 +120,6 @@ window.parentsDayData = {
       "assets/photos/dad-message/KakaoTalk_20260508_192413311_13.jpg"
     ]
   },
-  finalPhoto: "assets/photos/final-closing/KakaoTalk_20260508_192413311_26.jpg",
+  finalPhoto: "assets/photos/final-closing/KakaoTalk_20260508_190109079_01.jpg",
   musicFile: "assets/music/[mp3] 어머님 은혜.mp3"
 };
