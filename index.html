@@ -21,7 +21,7 @@
         </div>
         <p class="eyebrow">2026 어버이날</p>
         <h1>사랑하는 엄마 아빠께</h1>
-        <p class="lead">서연이가 자라온 시간들,<br>그 속에서 부모님께 전하는 말</p>
+        <p class="lead">미라와 재원이의 시간들,<br>그 속에서 부모님께 전하는 말</p>
         <span class="divider"></span>
       </section>
 
@@ -62,18 +62,12 @@
         <label class="portrait-upload">
           <input type="file" accept="image/*" data-final-photo>
           <img id="finalPhoto" alt="마지막에 들어갈 사진">
-          <span>내 사진 넣기</span>
+          <span>우리 사진 넣기</span>
         </label>
         <span class="mini-divider"></span>
-        <p class="signature">부모님의 영원한 아기, 서연 올림</p>
+        <p class="signature">부모님의 영원한 아기, 미라와 재원 올림</p>
         <p class="date">2026.05.08</p>
       </section>
-
-      <nav class="page-nav" aria-label="전용 페이지">
-        <a href="index.html" aria-current="page">부모님</a>
-        <a href="sibling.html">동생</a>
-        <a href="me.html">나</a>
-      </nav>
     </main>
 
     <div class="modal" id="modal" hidden>
@@ -82,14 +76,17 @@
         <p class="modal-kicker" id="modalKicker"></p>
         <h3 id="modalTitle"></h3>
         <p id="modalBody"></p>
+        <p class="photo-count" id="photoCount"></p>
         <div class="photo-grid" id="photoGrid"></div>
         <label class="add-photo" id="addPhotoLabel">
           <input type="file" accept="image/*" multiple id="photoInput">
-          사진 추가
+          사진 여러 장 추가
+          <small>한 번에 여러 장 선택할 수 있어요</small>
         </label>
       </div>
     </div>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
